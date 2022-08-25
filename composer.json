@@ -1,0 +1,20 @@
+{
+    "name":"robsduarte/sistema-sinopse-mvc",
+    "description":"Sistema de descrição de séries,animes e filmes. Com objetivo de detalhar episódios para melhor guiar em próximos replays.",
+    "minimum-stability":"stable",
+    "license":"property",
+    "type":"project",
+    "authors":
+    [{
+        "name":"Robson Duarte dos Santos",
+        "email":"robsduar@gmail.com",
+        "role":"Developer"
+    }],
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Source\\":"Source/"
+        }
+    }
+}
