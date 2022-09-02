@@ -18,13 +18,47 @@ class Request
      */
     private $URI;
 
+    /**
+     * Cabeçalho da requisição
+     *
+     * @var array
+     */
+    private $headers = [];
+
+    public function __construct()
+    {
+        $this->headers = getallheaders();
+        $this->httpMethod = $_SERVER['REQUEST_METHOD'];        
+        $this->URI = $_SERVER["REQUEST_URI"];
+    }
+
+    /**
+     * Método responsável por retornar a URI da requisição
+     *
+     * @return string
+     */
     public function getURI()
     {
         return $this->URI;
     }
 
+    /**
+     * Método responsável por retornar o método da requisição
+     *
+     * @return string
+     */
     public function getHttpMethod()
     {
-        $this->httpMethod;
+        return $this->httpMethod;
+    }
+
+    /**
+     * Método responsável por retornar o cabeçalho da requisição
+     *
+     * @return array
+     */
+    public function getHeaders()
+    {
+        return $this->headers;
     }
 }
