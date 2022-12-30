@@ -1,0 +1,23 @@
+
+@mixin col-1{width: 6.25%;}
+@mixin col-2{width: 12.5%;}
+@mixin col-3{width: 18.75%;}
+@mixin col-4{width: 25%;}
+@mixin col-5{width: 31.25%;}
+@mixin col-6{width: 37.5%;}
+@mixin col-7{width: 43.75%;}
+@mixin col-8{width: 50%;}
+@mixin col-9{width: 56.25%;}
+@mixin col-10{width: 62.5%;}
+@mixin col-11{width: 68.75%;}
+@mixin col-12{width: 75%;}
+@mixin col-13{width: 81.25%;}
+@mixin col-14{width: 87.5%;}
+@mixin col-15{width: 93.75%;}
+@mixin col-16{width: 100%;}
+
+@mixin slideshow-container
+{    
+    @include col-16;
+    height: 15vh;   
+}

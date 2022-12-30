@@ -1,0 +1,123 @@
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Rubik+Microbe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Rubik+Glitch&family=Rubik+Microbe&display=swap');
+
+.title
+{    
+    color: black;
+    @include col-16;
+    height: 10vh;
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+    p{
+        transform: rotate(-10deg);
+    }
+}
+
+
+.Destaque_filmes
+{    
+    @include slideshow-container;    
+    display: flex;
+    flex-flow: row nowrap;  
+    justify-content: center;
+    background-color: rgba($color: #bababa, $alpha: .4)
+   
+}
+
+.Destaque_animes
+{        
+    @include slideshow-container; 
+    display: flex;
+    flex-flow: row nowrap;  
+    justify-content: center; 
+    background-color: rgba($color: #bababa, $alpha: .4)  
+}
+
+.Destaque_series
+{       
+    @include slideshow-container;
+    display: flex;
+    flex-flow: row nowrap;  
+    justify-content: center;
+    background-color: rgba($color: #bababa, $alpha: .4)
+}
+
+.Destaque_mangas
+{        
+    @include slideshow-container;
+    display: flex;
+    flex-flow: row nowrap;  
+    justify-content: center;
+    background-color: rgba($color: white, $alpha: .2);
+}
+
+.slide_container
+{     
+    order: 2;
+    flex: 7;    
+}
+.slide_1,.slide_2,.slide_3,.slide_4
+{
+    display:  none;   
+}
+
+.next
+{        
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    font-weight: 900;
+    cursor: pointer;
+    order: 3;
+    flex: 1;
+    
+}
+.prev
+{      
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    font-weight: 900;
+    cursor: pointer;
+    order: 1;
+    flex: 1;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+figure
+{    
+    @include col-16;
+    height: 100%;   
+    z-index: 2;
+    img
+    {                     
+        @include col-16;
+        height: 100%;                    
+    }
+}
+  
+.section-title
+{    
+    @include col-16;
+    font-size: 1.5rem;
+    text-align:center;
+    font-family: 'Rubik Distressed', cursive;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>    
+    <link rel='stylesheet' type='text/css' media='screen' href='/Style/styles.css'>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/Style/main.js"></script>
+</head>
+<body>
+    <header>  
+        <section class="logo">
+            <figure>
+                <img src="" alt="">
+            </figure>           
+        </section>
+
+       <form class="search-bar" action="#">            
+            <input type="text" placeholder="Buscar...">
+            <button type="submit" class="search-go"><i class="fa fa-search"></i></button>           
+       </form>           
+        
+       <section class="nav-icon">
+            <a href="javascript:void(0);" class="icon" onclick="showAndHideMenu();">
+                <i class="fa fa-bars"></i>
+            </a>            
+       </section>
+
+       <nav>           
+        <a href="{{URL}}/filmes">Filmes</a>
+        <a href="#series">Séries</a>
+        <a href="#animes">Animes</a>
+        <a href="#mangas">Mangas</a>
+        <a href="#login">Login</a>                       
+        </nav>
+    </header>
+    
+    <main>
+        <section class="title">
+            <p>Plataforma do Sasaki</p>
+        </section>     
+           
+        <p class="section-title"> Filmes</p>      
+        <section class="Destaque_filmes">              
+            <article class="slide_container" >
+                <figure class=" slide_1  fade"><img  src="/Images/nemo.jpg" alt=""></figure>               
+                <figure class=" slide_1  fade"><img  src="/Images/sherk.jpg" alt=""></figure>
+                <figure class=" slide_1  fade"><img  src="/Images/toy.jpg" alt=""></figure>
+            </article>
+            
+            <a class="prev" onclick="moveSlide(-1,0);">&#10094;</a>
+            <a class="next" onclick="moveSlide(1,0)">&#10095;</a>                      
+        </section>
+
+        <p class="section-title">Series</p>
+        <section class="Destaque_series">
+            <article class="slide_container" >
+                <figure class="slide_2 fade"><img src="/Images/dragons.jpg" alt=""></figure>
+                <figure class="slide_2 fade"><img src="/Images/vampires.jpg" alt=""></figure>
+                <figure class="slide_2 fade"><img src="/Images/witcher.jpg" alt=""></figure>
+            </article>
+            
+            <a class="prev" onclick="moveSlide(-1,1);">&#10094;</a>
+            <a class="next" onclick="moveSlide(1,1);">&#10095;</a>
+            
+        </section>
+
+        <p class="section-title">Animes</p>
+        <section class="Destaque_animes">
+            <article class="slide_container" >
+                <figure class="slide_3 fade"><img src="/Images/86.png" alt=""></figure>
+                <figure class="slide_3 fade"><img src="/Images/naruto.jpg" alt=""></figure>
+                <figure class="slide_3 fade"><img src="/Images/dbz.webp" alt=""></figure>
+            </article>
+            
+            <a class="prev" onclick="moveSlide(-1,2);">&#10094;</a>
+            <a class="next" onclick="moveSlide(1,2);">&#10095;</a>
+             
+        </section>
+
+        <p class="section-title">Mangas</p>
+        <section class="Destaque_mangas">
+            <article class="slide_container" >
+                <figure class="slide_4 fade"><img src="/Images/one.jpg" alt=""></figure>
+                <figure class="slide_4 fade"><img src="/Images/naruto.jpg" alt=""></figure>
+                <figure class="slide_4 fade"><img src="/Images/slayer.jpg" alt=""></figure>
+            </article>
+            
+            <a class="prev" onclick="moveSlide(-1,3);">&#10094;</a>
+            <a class="next" onclick="moveSlide(1,3);">&#10095;</a>
+          
+        </section>
+        
+    </main>
+    <footer></footer>
+</body>
+</html>

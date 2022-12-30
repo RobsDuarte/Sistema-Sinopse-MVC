@@ -14,7 +14,7 @@
     {
         "psr-4":
         {
-            "Source\\":"Source/"
+            "Source\\":"source/"
         }
     }
 }

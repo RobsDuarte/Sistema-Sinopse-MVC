@@ -121,7 +121,8 @@ class Router
     public function getRoutePrefix()
     {
         $URI = $this->request->getURI();
-        $URI_prefix = explode($this->prefix,$URI);                            
+        $URI_prefix = explode($this->prefix,$URI); 
+        //var_dump($URI_prefix);                           
         return end($URI_prefix);
     }
 
@@ -134,11 +135,11 @@ class Router
     {
         $prefix = $this->getRoutePrefix();
         $http_method = $this->request->getHttpMethod();
-       
+      
         foreach($this->routes as $patternRoute=>$method)
         {             
             if(preg_match($patternRoute,$prefix))    
-            {               
+            {                       
                 if(isset($method[$http_method]))
                 {                    
                     return $method[$http_method];
@@ -157,7 +158,7 @@ class Router
     public function run()
     {
         try
-        {
+        {            
             $route = $this->getRoute();
             
             if(!isset($route['controller']))
