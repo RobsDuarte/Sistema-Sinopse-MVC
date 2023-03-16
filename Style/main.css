@@ -180,4 +180,66 @@ figure img {
   text-align: center;
   font-family: 'Rubik Distressed', cursive;
 }
+
+.filme_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5vh;
+}
+
+.filme_list article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 93.75%;
+  height: 20vh;
+  margin-top: 10px;
+  border: 1px solid;
+}
+
+.filme_list article figure {
+  width: clamp(150px, 150px, auto);
+  height: clamp(10vh, 100%, 25vh);
+}
+
+.filme_list article figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.filme_list article div {
+  width: 100%;
+  height: 100%;
+}
+
+.filme_list article div h1 {
+  text-align: center;
+}
+
+.filme_list article .session :not(h1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  font-size: 1.2em;
+}
 /*# sourceMappingURL=main.css.map */
