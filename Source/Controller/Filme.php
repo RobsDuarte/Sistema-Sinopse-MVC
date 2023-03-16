@@ -8,6 +8,9 @@ Class Filme
 {
     public static function getFilme()
     {
-        return View::render('filme');
+        $film = View::getViewContent("filme");
+        return View::render('template',[
+        "page_content" =>  $film
+    ]);
     }
 }

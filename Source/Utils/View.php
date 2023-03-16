@@ -23,7 +23,7 @@ class View
      * @param string $view
      * @return string
      */
-    private static function getViewContent($view)
+    public static function getViewContent($view)
     {
         $file = __DIR__.'/../../View/'.$view.".html";        
         return file_exists($file) ?  file_get_contents($file) : 'Página não existe' ;
