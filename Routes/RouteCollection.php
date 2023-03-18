@@ -2,6 +2,8 @@
 use Source\Controller\Home;
 use Source\Controller\Filme;
 use Source\Controller\Serie;
+use Source\Controller\Anime;
+use Source\Controller\Manga;
 
 $MyRouter->get('/',[
     function()
@@ -24,3 +26,17 @@ $MyRouter->get('/series',[
     }
 ]);
 
+$MyRouter->get('/animes',[
+    function()
+    {  
+        return  Anime::getAnime();
+    }
+]);
+
+
+$MyRouter->get('/mangas',[
+    function()
+    {  
+        return  Manga::getManga();
+    }
+]);

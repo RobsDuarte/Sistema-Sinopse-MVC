@@ -82,7 +82,8 @@ header
         @include col-12;     
         display: none;       
         background-color: $primary_color;   
-        z-index: 2;        
+        z-index: 10;    
+          
         a
         {
             display: flex;
