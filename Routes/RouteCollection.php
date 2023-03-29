@@ -1,9 +1,11 @@
 <?php
+
 use Source\Controller\Home;
 use Source\Controller\Filme;
 use Source\Controller\Serie;
 use Source\Controller\Anime;
 use Source\Controller\Manga;
+use Source\Controller\Login;
 
 $MyRouter->get('/',[
     function()
@@ -38,5 +40,12 @@ $MyRouter->get('/mangas',[
     function()
     {  
         return  Manga::getManga();
+    }
+]);
+
+$MyRouter->get('/login',[
+    function()
+    {  
+        return  Login::getLogin();
     }
 ]);
